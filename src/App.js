@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from "react";
 import { Toaster } from "react-hot-toast";
-import "./App.css"
+import "./assets/output.css";
 import Loader from "./components/reusable/Loader";
 const Sideabr = React.lazy(() => import("./components/sidebar/Sidebar"));
 const Input = React.lazy(() => import("./components/input/Input"));

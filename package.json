@@ -12,10 +12,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "build:tailwind": "tailwindcss build src/index.css -o src/tailwind.css",
+    "watch:css": "postcss src/App.css -o src/assets/output.css",
     "start": "react-scripts start",
     "build": "npm run watch:css && react-scripts build",
-    "prod:build": "NODE_ENV=production npm run build:tailwind react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
