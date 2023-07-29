@@ -1,31 +1,78 @@
-## React-SQL-Editor
+# React SQL Editor
+Task - Atlan Frontend Engineer <br/>
+Live Link - https://atlan-sql-editor-task.netlify.app
 
-## Task - Atlan Frontend Engineer
+## 1) The task
 
-# 1)A basic overview of your project->
+This project involves creating a dummy application with the following features:
+<ul>
+  <li>The application should include a space to accept SQL queries, which can be as simple as a textarea or as complex as a code-editor. However, this feature is not considered in the judging criteria.</li>
+  <li>There is no need to implement a backend, query engine, or query validation for the application.</li>
+  <li>Syntax validation for the SQL queries is not required.</li>
+  <li>The data displayed in the application does not need to be the actual result of the queries that would be executed. It can be any arbitrary block of data chosen from a provided link or any other data source. The data and the query do not need to be synchronized.</li>
+  <li>The actual SQL query and its result are not important. Placeholder data or mock results can be used as needed.</li>
+  <li>The application must have more than one query along with its corresponding table of data. A predefined set of queries and tables with sample data should be available. The application should allow users to toggle between these queries and view the associated table data. This can be achieved through a dropdown or any other toggling mechanism.</li>
+</ul>
 
-A web application where users can run some predefined SQL Queries and they can see the outputs in the screen that is predefined according to query
+<br/>
+<br/>
 
-![Screenshot (174)](https://user-images.githubusercontent.com/55119355/175116005-dd91dfc4-2cc3-467a-a88d-5c4dda02fa48.png)
+![Landing page](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/cc96ce47-03ea-4b18-9eeb-b6e92344384a)
 
-![Screenshot (175)](https://user-images.githubusercontent.com/55119355/175115949-03b0f2bf-8a6d-4e0c-bfe1-4e08672825f2.png)
+## Added accessibility and functionality
+
+<ul>
+  <li>Implemented the capability to download the query results as both CSV and JSON files, providing users with options for data export.</li>
+  <li>Enhanced user experience by displaying the time taken to fetch the data, allowing users to have better insights into query performance.</li>
+  <li>Introduced a paginated table to optimize webpage loading, ensuring a smoother and faster browsing experience, especially with large datasets.</li>
+  <li>Enriched the application with an advanced search functionality, enabling users to easily locate specific rows within the result query, promoting efficient data exploration and analysis.</li>
+</ul>
+
+![Paginated table](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/6ef72f4b-4d76-4e96-8f8b-72062a4314c0)
 
 
-# 2)The JavaScript framework you chose, along with any major plugins or packages you installed->
+## 2)The JavaScript framework I chose, along with any major plugins or packages I installed
 
-The Javascript framework that i have chosen is Reactjs along with I have used tailwind css for styling.
-I calculated the performance and load time of this website using these two tools Lighthouse Chrome DevTools
+I have opted for <b>React.js</b> as the JavaScript framework and incorporated <b>Tailwind CSS</b> for styling. <br/>
+The Major Plugins and Packages used are : <br/>
+<ul>
+  <li>react-csv: 2.2.2</li>
+  <li>react-hot-toast: 2.1.1</li>
+  <li>react-table: 7.7.0</li>
+  <li>autoprefixer: 10.4.14</li>
+  <li>cssnano: 6.0.1</li>
+  <li>postcss: 8.4.27</li>
+  <li>tailwindcss: 2.2.19</li>
+</ul>
+<br/>
 
-# 3)The page load time of your application, and how you measured this time.
+
+## 3)The page load time of your application, and how you measured this time.
+
+For all the optimal analysis, I calculated the performance and load time along with how well it performs as per web standards using these two tools <br/>
+<ol>
+  <li>Lighthouse Chrome DevTools </li>
+  <li>GT Metrix</li>
+</ol>
 
 The load time is about 0.8 sec
 
+![Load Time](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/4aef2678-9cb6-483f-8d16-b98f68dbe99c)
+
 For all the optimal analysis, I have used Google's Lighthouse tool to analysze the page load time, along with how well it performs as per web standards.
 
-![Screenshot (173)](https://user-images.githubusercontent.com/55119355/175116110-59057d2b-0f21-43a9-a03c-c1ef3010effe.png)
+### Lighthouse Chrome DevTools
 
-# 4)Any optimisations you did to decrease the load time or increase performance.
+![Lighthouse ](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/0e762e4a-f848-4563-ae43-9ca50aee3919)
 
-I have used React.lazy() and suspense for lazy loading of components.I HaveUsed React.Memo() to optimize the render performance whereever need.As i have used tailwind so for smaller css file size I have used PurgeCSS to remove unused styles and optimize my final build .
+### GT Metrix
 
-## I am rendering about 16,000 rows for the mock data query
+![GTMetrix Performance](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/df65c0f1-d082-4b93-852b-3f09c15f7598)
+
+
+## 4)Any optimisations I did to decrease the load time or increase performance.
+
+In order to achieve lazy loading of components and improve the performance of the application's loading, I used <b>suspense</b> and <b>React.lazy()</b> in this work. In order to ensure a more seamless user experience, I also intentionally used <b>React.memo()</b> to optimise rendering whenever appropriate. Since I used Tailwind CSS for styling, I used <b>PurgeCSS</b> to get rid of unnecessary styles, resulting in a more effective and condensed final build with a smaller CSS file size.
+
+## In my application, I successfully managed to render approximately 16,000 rows for the big data query while ensuring the browser remains intact and maintaining optimal performance.
+![16000 rows](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/42aae21c-5cdf-4103-a935-8d9e6daa91d7)
