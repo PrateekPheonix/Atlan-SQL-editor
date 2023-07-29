@@ -1,0 +1,48 @@
+{
+  "name": "react-sql-query",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-csv": "^2.2.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1",
+    "react-scripts": "^5.0.1",
+    "react-table": "^7.7.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "build:tailwind": "tailwindcss build src/index.css -o src/tailwind.css",
+    "start": "react-scripts start",
+    "build": "npm run watch:css && react-scripts build",
+    "prod:build": "NODE_ENV=production npm run build:tailwind react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "glob-all": "^3.3.1",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}
