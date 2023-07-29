@@ -31,7 +31,7 @@ This project involves creating a dummy application with the following features:
 ![Paginated table](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/6ef72f4b-4d76-4e96-8f8b-72062a4314c0)
 
 
-## 2)The JavaScript framework I chose, along with any major plugins or packages I installed
+## 2) The JavaScript framework I chose, along with any major plugins or packages I installed
 
 I have opted for <b>React.js</b> as the JavaScript framework and incorporated <b>Tailwind CSS</b> for styling. <br/>
 The Major Plugins and Packages used are : <br/>
@@ -47,7 +47,7 @@ The Major Plugins and Packages used are : <br/>
 <br/>
 
 
-## 3)The page load time of your application, and how you measured this time.
+## 3) The page load time of your application, and how you measured this time.
 
 For all the optimal analysis, I calculated the performance and load time along with how well it performs as per web standards using these two tools <br/>
 <ol>
@@ -70,7 +70,7 @@ For all the optimal analysis, I have used Google's Lighthouse tool to analysze t
 ![GTMetrix Performance](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/df65c0f1-d082-4b93-852b-3f09c15f7598)
 
 
-## 4)Any optimisations I did to decrease the load time or increase performance.
+## 4) Any optimisations I did to decrease the load time or increase performance.
 
 In order to achieve lazy loading of components and improve the performance of the application's loading, I used <b>suspense</b> and <b>React.lazy()</b> in this work. In order to ensure a more seamless user experience, I also intentionally used <b>React.memo()</b> to optimise rendering whenever appropriate. Since I used Tailwind CSS for styling, I used <b>PurgeCSS</b> to get rid of unnecessary styles, resulting in a more effective and condensed final build with a smaller CSS file size.
 
