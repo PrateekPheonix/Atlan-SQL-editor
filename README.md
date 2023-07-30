@@ -1,6 +1,6 @@
 # React SQL Editor
 Task - Atlan Frontend Engineer <br/>
-Live Link - https://atlan-task-frontend-prateek-niket.netlify.app
+Live Link - https://atlan-sql-editor-task.netlify.app
 
 ## 1) The task
 
