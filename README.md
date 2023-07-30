@@ -18,6 +18,12 @@ This project involves creating a dummy application with the following features:
 <br/>
 
 ![Landing page](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/cc96ce47-03ea-4b18-9eeb-b6e92344384a)
+<br/>
+<br/>
+<br/>
+![mobile view_16x9](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/dda0aa99-a442-4d01-88b0-5983f104058a)
+<br/>
+<br/>
 
 ## Added accessibility and functionality
 
@@ -26,11 +32,14 @@ This project involves creating a dummy application with the following features:
   <li>Enhanced user experience by displaying the time taken to fetch the data, allowing users to have better insights into query performance.</li>
   <li>Introduced a paginated table to optimize webpage loading, ensuring a smoother and faster browsing experience, especially with large datasets.</li>
   <li>Enriched the application with an advanced search functionality, enabling users to easily locate specific rows within the result query, promoting efficient data exploration and analysis.</li>
+  <li>The application was optimized to ensure <b>responsiveness</b> across a wide range of devices, including small screen mobile phones, medium-sized screen tablets, and even large-screen tablets.</li>
 </ul>
+<br/>
+<br/>
 
 ![Paginated table](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/6ef72f4b-4d76-4e96-8f8b-72062a4314c0)
-
-
+<br/>
+<br/>
 ## 2) The JavaScript framework I chose, along with any major plugins or packages I installed
 
 I have opted for <b>React.js</b> as the JavaScript framework and incorporated <b>Tailwind CSS</b> for styling. <br/>
@@ -59,16 +68,19 @@ The load time is about 0.8 sec
 
 ![Load Time](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/4aef2678-9cb6-483f-8d16-b98f68dbe99c)
 
+<br/>
+<br/>
 For all the optimal analysis, I have used Google's Lighthouse tool to analysze the page load time, along with how well it performs as per web standards.
 
-### Lighthouse Chrome DevTools
+## Lighthouse Chrome DevTools
 
 ![Lighthouse ](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/0e762e4a-f848-4563-ae43-9ca50aee3919)
 
-### GT Metrix
+## GT Metrix
 
 ![GTMetrix Performance](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/df65c0f1-d082-4b93-852b-3f09c15f7598)
 
+<br/>
 
 ## 4) Any optimisations I did to decrease the load time or increase performance.
 
