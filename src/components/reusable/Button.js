@@ -5,7 +5,7 @@ export const Button = ({ children, className, handleClick }) => {
   return (
     <button
       className={classNames(
-        "bg-primary-dark hover:bg-blue-700 transition-colors text-white rounded-md font-semibold px-4 py-2 my-4 shadow-lg ",
+        "bg-primary-dark hover:bg-blue-700 transition-colors text-white rounded-md font-semibold px-4 py-2 my-4 shadow-lg download-btn",
         className
       )}
       onClick={handleClick}

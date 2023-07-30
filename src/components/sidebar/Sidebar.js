@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import TABLE_NAMES from "../../helper/constants";
 
 const Sidebar = ({ setQuery, setValue }) => {
   const handleQuery = (queryName) => {
     setQuery(queryName);
     setValue(`select * from ${queryName}`);
+  };
+
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = event => {
+    setIsActive(current => !current);
   };
 
   const convertToNormalString = (str) => {
@@ -17,20 +23,15 @@ const Sidebar = ({ setQuery, setValue }) => {
   };
   return (
     <>
-      <nav className="col-start-2 col-end-3 row-start-1 row-end-2  shadow">
-        <div className="px-6 lg:px-12">
-          <div className="flex items-center justify-between h-24">
-            <div className="w-full flex justify-center items-center">
-              <div className="flex items-center text-black font-bold text-2xl align-middle">
-                SQL Editor - Atlan Task
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
 
-      <div className="relative col-start-1 col-end-2 row-start-1 row-end-5">
-        <div className="bg-secondary-dark text-white w-72 px-2 fixed top-0 bottom-0 z-50 min-h-screen overflow-y-auto">
+
+      <div className="">
+        <div className={"hamburger h-12" + (isActive ? ' active' : '')} onClick={() => handleClick()}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <div className={"bg-secondary-dark text-white w-72 px-2 fixed top-0 bottom-0 z-50 min-h-screen overflow-y-auto nav-menu" + (isActive ? ' active' : '')}>
           <p className="p-5  text-center border-b-2 text-base text-gray-200">Select pre-defined queries from the given list below</p>
           <aside className="p-5">
             {TABLE_NAMES.map((name) => {
@@ -41,6 +42,7 @@ const Sidebar = ({ setQuery, setValue }) => {
                   key={name}
                   onClick={() => {
                     handleQuery(name);
+                    handleClick();
                   }}
                 >
                   <span className="mx-4 text-sm font-semibold">

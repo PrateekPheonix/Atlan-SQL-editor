@@ -1,7 +1,9 @@
 import React, { useState, Suspense } from "react";
 import { Toaster } from "react-hot-toast";
-import "./assets/output.css";
+// import "./assets/output.css";
+import "./App.css"
 import Loader from "./components/reusable/Loader";
+const Navbar = React.lazy(() => import("./components/navbar/Navbar"));
 const Sideabr = React.lazy(() => import("./components/sidebar/Sidebar"));
 const Input = React.lazy(() => import("./components/input/Input"));
 const TableSection = React.lazy(() =>
@@ -42,16 +44,19 @@ const App = () => {
           },
         }}
       />
-      <div className="grid grid-cols-layout-desktop grid-rows-layout-desktop min-h-screen font-Poppins">
+      <div className="min-h-screen font-Poppins">
         <Suspense fallback={<Loader />}>
           <Sideabr
             setQuery={setQuery}
             setValue={setValue}
             setIsOpen={setIsOpen}
           />
-          <div className="min-h-fit px-10 py-8 b">
-            <Input setQuery={setQuery} value={value} setValue={setValue} />
-            {query ? <TableSection query={query} isOpen={isOpen} /> : null}
+          <div className="ml-72 content">
+            <Navbar />
+            <div className="min-h-fit px-10 py-8 ctn">
+              <Input setQuery={setQuery} value={value} setValue={setValue} />
+              {query ? <TableSection query={query} isOpen={isOpen} /> : null}
+            </div>
           </div>
         </Suspense>
       </div>

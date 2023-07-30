@@ -23,7 +23,7 @@ const TableSection = React.memo(({ query }) => {
   const queryData = useMemo(() => data.slice(1), [data]);
   if (error)
     return (
-      <section className="col-start-2 col-end-3 row-start-3 row-end-4 text-white m-6">
+      <section className=" text-white m-6">
         <h1 className="text-center font-bold text-xl text-primary-dark">
           Something Went Wrong
         </h1>
@@ -31,10 +31,10 @@ const TableSection = React.memo(({ query }) => {
     );
   return (
     <>
-      <section className="col-start-2col-end-3 row-start-3 row-end-4 text-white mx-6 my-12 lg:mx-12 overflow-hidden">
+      <section className=" text-white mx-6 my-12 lg:mx-12 overflow-hidden main-content">
         {data.length > 0 ? (
           <>
-            <p className="text-primary-dark">
+            <p className="text-primary-dark search">
               Query took:{" "}
               <span className="font-bold">{`${queryRuntime.toFixed(
                 2

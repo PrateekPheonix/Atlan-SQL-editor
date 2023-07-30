@@ -73,7 +73,7 @@ const Table = ({ columns, data, completeData, query }) => {
 
   return (
     <>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center search">
         <GlobalFilter
           preGlobalFilteredRows={preGlobalFilteredRows}
           globalFilter={state.globalFilter}
@@ -84,7 +84,7 @@ const Table = ({ columns, data, completeData, query }) => {
           <div className="flex">
             <CSVLink
               data={dataforcsv}
-              className="bg-primary-dark hover:bg-secondary-dark transition-colors text-white rounded-md font-semibold px-4 py-2 mr-3 shadow-lg flex justify-center items-center"
+              className="bg-primary-dark hover:bg-secondary-dark transition-colors text-white rounded-md font-semibold px-4 py-2 mr-3 shadow-lg flex justify-center items-center download-btn"
               filename={`${query}.csv`}
             >Download CSV
             </CSVLink>;

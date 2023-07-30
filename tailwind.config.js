@@ -17,12 +17,6 @@ module.exports = {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
       },
-      gridTemplateColumns: {
-        "layout-desktop": "16rem 1fr",
-      },
-      gridTemplateRows: {
-        "layout-desktop": "90px 300px 1fr 4rem",
-      },
       screens: {
         xs: "424px",
       },
