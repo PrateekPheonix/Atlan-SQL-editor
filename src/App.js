@@ -1,7 +1,7 @@
 import React, { useState, Suspense } from "react";
 import { Toaster } from "react-hot-toast";
-// import "./assets/output.css";
-import "./App.css"
+import "./assets/output.css";
+// import "./App.css"
 import Loader from "./components/reusable/Loader";
 const Navbar = React.lazy(() => import("./components/navbar/Navbar"));
 const Sideabr = React.lazy(() => import("./components/sidebar/Sidebar"));
