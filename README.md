@@ -86,5 +86,5 @@ For all the optimal analysis, I have used Google's Lighthouse tool to analysze t
 
 In order to achieve lazy loading of components and improve the performance of the application's loading, I used <b>suspense</b> and <b>React.lazy()</b> in this work. In order to ensure a more seamless user experience, I also intentionally used <b>React.memo()</b> to optimise rendering whenever appropriate. Since I used Tailwind CSS for styling, I used <b>PurgeCSS</b> to get rid of unnecessary styles, resulting in a more effective and condensed final build with a smaller CSS file size.
 
-## In my application, I successfully managed to render approximately 16,000 rows for the big data query while ensuring the browser remains intact and maintaining optimal performance.
+## In my application, I successfully managed to render approximately 16,609 rows for the big data query while ensuring the browser remains intact and maintaining optimal performance.
 ![16000 rows](https://github.com/PrateekPheonix/Atlan-SQL-editor/assets/76847182/42aae21c-5cdf-4103-a935-8d9e6daa91d7)
